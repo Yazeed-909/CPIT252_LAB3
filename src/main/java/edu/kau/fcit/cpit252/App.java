@@ -16,8 +16,6 @@ public class App {
         
         try {
         Car c2 = Car.CloneCar(c1);
-        System.out.println(System.identityHashCode(c1));
-        System.out.println(System.identityHashCode(c2));
         RecallViewer rv = new RecallViewer(c2);
         rv.printTableView();
         } catch (CloneNotSupportedException ex) {
